@@ -16,6 +16,10 @@ Feel free and don't hesitate contributing to this repository.
 ### try_interval.sh
 Try to execute a command until a successful result or reach a limitation in number of *tries* based on an *interval time* between each try.
 
+Example:
+
+#./try_interval.sh -i 6 -n 3 mycommand
+
 ### bulk_commands.sh
 Execute same command for all lines of a file as input.
 
