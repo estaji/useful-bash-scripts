@@ -1,12 +1,9 @@
 # About
 It is a group of **useful shell scripts** for DevOps engineers, System administrators and developers.
 
-## How
+# How
 Each script has a different purpose and scripts are not related to each other.
 Find a useful script from this readme file then use it.
-
-## Contribution
-Feel free and don't hesitate contributing to this repository.
 
 # List
 + try_interval.sh
@@ -37,3 +34,6 @@ You can use FTP_STORAGE_PASS environment variable instead of -p option.
 Example usage:
 
 #backup_ftp.sh -d /home/myuser/myfiles/ -o /tmp/backups/bkp-$(date '+%Y-%m-%d-%H-%M-%S').tar.gz -u b110973 -f b110973.myftpserver.org -p f67Eex1JsfR8bB -r
+
+# Contribution
+Feel free and don't hesitate contributing to this repository.
