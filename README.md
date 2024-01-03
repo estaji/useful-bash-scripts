@@ -37,9 +37,9 @@ Example usage:
 #backup_ftp.sh -d /home/myuser/myfiles/ -o /tmp/backups/bkp-$(date '+%Y-%m-%d-%H-%M-%S').tar.gz -u b110973 -f b110973.myftpserver.org -p f67Eex1JsfR8bB -r
 
 ### incremental-backup-smb.sh
-Create incremental backup on each execution (for example by a cronjob) And create a full (tar) backup on specific Day Of Week and Hour.
-Destination is a SMB server
+Create an incremental backup (using rsync) on each execution (for example by a cronjob) And create a full (tar) backup on a specific day of week and hour.
+The destination is a SMB server
 Create the mount point destination manually before execution.
 
 # Contribution
-Feel free and don't hesitate contributing to this repository.
+Feel free and don't hesitate to contribute to this repository.
