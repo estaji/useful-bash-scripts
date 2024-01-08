@@ -37,7 +37,7 @@ create_tar() {
 
 # Main
 connect_smb
-if [[ "$?" -eq 1 ]]; then
+if [[ "$?" -ne 0 ]]; then
     logger -p local0.info -t "backup mount smb" "### mounting $BKP_SMB_HOST FAILED!"
     exit 1
 fi
