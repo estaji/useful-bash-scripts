@@ -10,6 +10,7 @@ Find a useful script from this readme file then use it.
 + bulk_commands.sh
 + backup_ftp.sh
 + incremental-backup-smb.sh
++ remove_old_created_files.sh
 
 ### try_interval.sh
 Try to execute a command until a successful result or reach a limitation in the number of *tries* based on an *interval time* between each try.
@@ -42,6 +43,11 @@ Create an incremental backup (using rsync) on each execution (for example the sc
 The destination is an SMB server.
 
 Create the mount point destination manually before execution. Also, configure variables in the next step.
+
+### remove_old_created_files.sh
+Find old created files (older than REMOVER_PAST_DAYS variable) and delete them.
+
+Change REMOVER_DIR, REMOVER_PAST_DAYS and REMOVER_TODAY variables then use.
 
 # Contribution
 Feel free and don't hesitate to contribute to this repository.
