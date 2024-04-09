@@ -14,7 +14,7 @@ check_dir_exists() {
     fi
 }
 find_and_delete() {
-    find $REMOVER_DIR -type f -ctime +$REMOVER_PAST_DAYS -exec rm -vf {} \; | xargs logger -p local1.info -t "deleted"
+    find $REMOVER_DIR -type f -mtime +$REMOVER_PAST_DAYS -exec rm -vf {} \; | xargs logger -p local1.info -t "deleted"
 }
 
 # Main
