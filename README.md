@@ -11,6 +11,7 @@ Find a useful script from this readme file then use it.
 + backup_ftp.sh
 + incremental-backup-smb.sh
 + remove_old_created_files.sh
++ archive-to-minio-using-mc.sh
 
 ### try_interval.sh
 Try to execute a command until a successful result or reach a limitation in the number of *tries* based on an *interval time* between each try.
@@ -48,6 +49,12 @@ Create the mount point destination manually before execution. Also, configure va
 Find old created files (older than REMOVER_PAST_DAYS variable) and delete them.
 
 Change REMOVER_DIR, REMOVER_PAST_DAYS and REMOVER_TODAY variables then use.
+
+### archive-to-minio-using-mc.sh
+Archive files or backups in a MinIO bucket. This script ensures today's backup existence, uploads it to the bucket and then removes the oldest file (based on BKP_OLD_DATE variable) locally and remotely. requirements:
+
+1. mc command as minio client
+2. create an Alias for your bucket in mc command (https://min.io/docs/minio/linux/reference/minio-mc.html)
 
 # Contribution
 Feel free and don't hesitate to contribute to this repository.
