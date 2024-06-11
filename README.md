@@ -12,6 +12,7 @@ Find a useful script from this readme file then use it.
 + incremental-backup-smb.sh
 + remove_old_created_files.sh
 + archive-to-minio-using-mc.sh
++ backup-dockerized-postgresql-to-smb.sh
 
 ### try_interval.sh
 Try to execute a command until a successful result or reach a limitation in the number of *tries* based on an *interval time* between each try.
@@ -55,6 +56,11 @@ Archive files or backups in a MinIO bucket. This script ensures today's backup e
 
 1. mc command as minio client
 2. create an Alias for your bucket in mc command (https://min.io/docs/minio/linux/reference/minio-mc.html)
+
+### backup-dockerized-postgresql-to-smb.sh
+Create dump from a dockerized PostgreSQL database and save it locally, then upload it to a SMB storage.
+
+Tested on Rocky 8, Please check commands (like /usr/bin/time -f %e) on another OS.
 
 # Contribution
 Feel free and don't hesitate to contribute to this repository.
