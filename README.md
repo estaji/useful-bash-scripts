@@ -61,9 +61,10 @@ Archive files or backups in a MinIO bucket. This script ensures today's backup e
 ### backup-dockerized-postgresql-to-smb.sh
 Create dump from a dockerized PostgreSQL database and save it locally, then upload it to a SMB storage.
 
+Tested on Rocky 8, Please check commands (like /usr/bin/time -f %e) on another OS.
+
 ### backup-website-files-and-db-to-smb.sh
 Create dump from a mysql database and compress website files, then mount a SMB storage and copy the backup to it.
-Tested on Rocky 8, Please check commands (like /usr/bin/time -f %e) on another OS.
 
 # Contribution
 Feel free and don't hesitate to contribute to this repository.
