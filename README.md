@@ -14,6 +14,7 @@ Find a useful script from this readme file then use it.
 + archive-to-minio-using-mc.sh
 + backup-dockerized-postgresql-to-smb.sh
 + backup-website-files-and-db-to-smb.sh
++ dump-postgresql-db-then-rsync.sh
 
 ### try_interval.sh
 Try to execute a command until a successful result or reach a limitation in the number of *tries* based on an *interval time* between each try.
@@ -65,6 +66,9 @@ Tested on Rocky 8, Please check commands (like /usr/bin/time -f %e) on another O
 
 ### backup-website-files-and-db-to-smb.sh
 Create dump from a mysql database and compress website files, then mount a SMB storage and copy the backup to it.
+
+### dump-postgresql-db-then-rsync.sh
+Create dump from a Postgresql database. Then transfer the dump to a remote server using rsync.
 
 # Contribution
 Feel free and don't hesitate to contribute to this repository.
