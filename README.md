@@ -15,6 +15,7 @@ Find a useful script from this readme file then use it.
 + backup-dockerized-postgresql-to-smb.sh
 + backup-website-files-and-db-to-smb.sh
 + dump-postgresql-db-then-rsync.sh
++ dump-dockerized-psql-db-then-rsync.sh
 
 ### try_interval.sh
 Try to execute a command until a successful result or reach a limitation in the number of *tries* based on an *interval time* between each try.
@@ -69,6 +70,9 @@ Create dump from a mysql database and compress website files, then mount a SMB s
 
 ### dump-postgresql-db-then-rsync.sh
 Create dump from a Postgresql database. Then transfer the dump to a remote server using rsync.
+
+### dump-dockerized-psql-db-then-rsync.sh
+Create dump from a dockerized Postgresql database. Then transfer the dump to a remote server using rsync.
 
 # Contribution
 Feel free and don't hesitate to contribute to this repository.
