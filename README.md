@@ -17,6 +17,7 @@ Find a useful script from this readme file then use it.
 + dump-postgresql-db-then-rsync.sh
 + dump-dockerized-psql-db-then-rsync.sh
 + bulk-delete-helm-release-and-namespace.sh
++ setup-rbash-for-a-user.sh
 
 ### try_interval.sh
 Try to execute a command until a successful result or reach a limitation in the number of *tries* based on an *interval time* between each try.
@@ -77,6 +78,10 @@ Create dump from a dockerized Postgresql database. Then transfer the dump to a r
 
 ### bulk-delete-helm-release-and-namespace.sh
 This script do helm uninstall on a certain pattern namespaces (like *-dev in this example) and then delete those namespaces on a Kubernetes cluster.
+
+### setup-rbash-for-a-user.sh
+This script setups RBASH for a user that is already created and just allow the user to use certain limited commands.
+For example you can create a user with only rsync access to transfer log files and it does not have any other commands and access.
 
 # Contribution
 Feel free and don't hesitate to contribute to this repository.
